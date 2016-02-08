@@ -18,8 +18,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| ~L1  |           |  '   |------+------+------+------+------+--------|
  * | LCtrl  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RCtrl  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Hyper | Home | End  | LAlt | LGUI |                                       | ~L3  | Ralt |      |      | RGUI |
- *   `----------------------------------'                                       `----------------------------------'
+ *   |Hyper | Home | End  | LAlt |LGUI/F19|                                     | ~L3  | Ralt |      |      | RGUI |
+ *   `------------------------------------'                                     `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | Bksp |      |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   KC_TRNS,
         KC_LSFT,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LCTL,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   MO(FUNK),
-        KC_HYPR,        KC_HOME,      KC_END, KC_LALT,KC_LGUI,
+        KC_HYPR,        KC_HOME,      KC_END, KC_LALT,GUI_T(KC_F19),
                                               KC_BSPC,KC_TRNS,
                                                               KC_PGUP,
                                               KC_SPC, KC_ESC, KC_PGDN,
