@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Tab    |   Q  |   W  |   E  |   R  |   T  | Bksp |           |  \   |   Y  |   U  |   I  |   O  |   P  |   -    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LShift |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |~L2/; | RShift |
+ * | LShift |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |  ;   | RShift |
  * |--------+------+------+------+------+------| Meh  |           |  '   |------+------+------+------+------+--------|
  * | LCtrl  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RCtrl  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -35,15 +35,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,  KC_1,    KC_2,   KC_3,   KC_4,   KC_5,   MO(FUNK),
         KC_TAB,  KC_Q,    KC_W,   KC_E,   KC_R,   KC_T,   KC_BSPC,
         KC_LSFT, KC_A,    KC_S,   KC_D,   KC_F,   KC_G,
-        KC_LCTL, KC_Z,    KC_X,   KC_C,   KC_V,   KC_B,   KC_MEH,
-        KC_HYPR, KC_HOME, KC_END, KC_LALT,KC_LGUI,
+        KC_LCTL, KC_Z,    KC_X,   KC_C,   KC_V,   KC_B,   MO(KODE),
+        KC_HYPR, KC_MEH,  KC_TRNS,KC_LALT,KC_LGUI,
                                                   KC_DELT,KC_TRNS,
                                                           KC_PGUP,
                                           KC_SPC, KC_ESC, KC_PGDN,
         // right hand
              KC_TRNS,     KC_6,     KC_7,          KC_8,    KC_9,    KC_0,             KC_EQL,
              KC_BSLASH,   KC_Y,     KC_U,          KC_I,    KC_O,    KC_P,             KC_MINS,
-                          KC_H,     KC_J,          KC_K,    KC_L,    LT(KODE,KC_SCLN), KC_RSFT,
+                          KC_H,     KC_J,          KC_K,    KC_L,    KC_SCLN,          KC_RSFT,
              KC_QUOT,     KC_N,     KC_M,          KC_COMM, KC_DOT,  KC_SLSH,          KC_RCTL,
                                     GUI_T(KC_ESC), KC_RALT, KC_TRNS, KC_TRNS,          KC_TRNS,
              KC_LEFT,     KC_RGHT,
