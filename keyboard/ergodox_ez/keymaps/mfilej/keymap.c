@@ -18,8 +18,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|~WASD |           |  '   |------+------+------+------+------+--------|
  * | LCtrl  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RCtrl  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Hyper | Home | End  | LAlt | LGUI |                                      |GUI/Esc| Ralt |~FUNK |      |      |
- *   `----------------------------------'                                      `-----------------------------------'
+ *   |Hyper | Home | End  | LAlt | LGUI |                                       | RGUI | Ralt |~FUNK |      |      |
+ *   `----------------------------------'                                       `-----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        |Delete|      |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_BSLASH,   KC_Y,     KC_U,          KC_I,    KC_O,              KC_P,    KC_MINS,
                           KC_H,     KC_J,          KC_K,    KC_L,              KC_SCLN, KC_RSFT,
              KC_QUOT,     KC_N,     KC_M,          KC_COMM, KC_DOT,            KC_SLSH, KC_RCTL,
-                                    GUI_T(KC_ESC), KC_RALT, LT(FUNK, KC_MPLY), KC_TRNS, KC_TRNS,
+                                    KC_RGUI,       KC_RALT, LT(FUNK, KC_MPLY), KC_TRNS, KC_TRNS,
              KC_LBRC,     KC_RBRC,
              KC_UP,
              KC_DOWN,     MO(FUNK), KC_ENT
